@@ -1,0 +1,190 @@
+body{
+   margin: 0;
+}
+header{
+   background-color: transparent;
+   text-align: center;
+   margin-top: auto;
+   font-size: large;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: whitesmoke;
+}
+video{
+   position: fixed;
+   min-width: 100%;
+   min-height: 100%;
+   top: 50%;
+   left: 50%;
+   transform: translateX(-50%) translateY(-50%);
+   z-index: -1;
+   
+}
+
+/*canvas{
+    opacity: 30%;
+    background: linear-gradient(blue,pink);
+ }*/
+ .entrada{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: 40px;
+    left: 80px;
+    border-radius: 15px;
+    font-family: italic;
+    font-size: 1.5em;
+    text-align: center;
+    opacity: 80%;
+    background:linear-gradient(white,paleturquoise);
+    border: none;
+    
+ }
+ .salida{
+    position: absolute;
+    left: 820px;
+    top: 40px;
+    width: 400px;
+    height: 550px;
+    font-family: italic;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 15px;
+    opacity: 80%;
+    background:linear-gradient(white,paleturquoise);
+    border: none;
+
+    
+
+ }
+.primer-parrafo{
+    position: absolute;
+    top: 420px;
+    left: 100px;
+    font-size: 1.5em;
+    color: aliceblue;
+
+ }
+
+ .botonEncriptar {
+    position: absolute;
+    left: 100px;
+    top: 500px;
+    width: 280px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: antiquewhite;
+    font-size: x-large;
+    font-family: italic;
+    background-color: whitesmoke;
+    
+}
+
+ 
+
+ .boton-desencriptar{
+    position: absolute;
+    left: 400px;
+    top: 500px;
+    width: 280;
+    height: 50px;
+    border-radius: 15px;
+    border-color: antiquewhite;
+    font-size: x-large;
+    font-family: italic;
+    background-color: whitesmoke;
+    
+}
+ 
+
+ .boton-copiar{
+    position: absolute;
+    left: 870px;
+    top: 500px;
+    width: 280px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: antiquewhite;
+    font-size: x-large;
+    font-family: italic;
+    background-color: whitesmoke;
+ }
+
+ .boton-copiar:hover{
+    color:blueviolet;
+    background-color: paleturquoise;
+    transition: .5s;
+    scale: 105%;
+    rotate: 1deg;
+    border-color: blueviolet;
+    
+ }
+ .boton-desencriptar:hover{
+   color:blueviolet;
+   background-color: paleturquoise;
+   transition: .5s;
+   scale: 105%;
+   rotate: 1deg;
+   border-color: blueviolet;
+ }
+ .botonEncriptar:hover{
+   color:blueviolet;
+    background-color: paleturquoise;
+    transition: .5s;
+    scale: 105%;
+    rotate: 1deg;
+    border-color: blueviolet;
+ }
+ footer{
+   position: absolute;
+   top: 550px;
+   width: 100%;
+   
+ }
+ .Enlaces{
+   position: absolute;
+   color: white;
+   left:35%;
+   top: 100px;
+   border: 5px;
+   font-family: italic;
+ }
+ .git-hub{
+   position: absolute;
+   top: 190px;
+   width: 150px;
+   height: 150px;
+   left: 200px;
+ }
+ .git-hub:hover{
+   scale: 110%;
+   opacity: 70%;
+   transition: 1s;  
+}
+ .linkedin{
+   position: absolute;
+   width: 150px;
+   height: 150px;
+   left: 1000px;
+   top: 190px;
+   
+ }
+ .linkedin:hover{
+   scale: 110%;
+   opacity: 70%;
+   transition: 1s;
+   
+}
+ .fondo{
+   position: absolute;
+   width: 200px;
+   height: 200px;
+   left: 600px;
+   top: 190px;
+   border-radius: 5px;
+}
+.fondo:hover{
+   scale: 150%;
+   opacity: 70%;
+   transition: 1s;
+   
+}

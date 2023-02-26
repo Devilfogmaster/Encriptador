@@ -1,0 +1,80 @@
+// La letra "e" es convertida para "enter"
+// La letra "i" es convertida para "imes"
+// La letra "a" es convertida para "ai"
+// La letra "o" es convertida para "ober"
+// La letra "u" es convertida para "ufat"
+
+
+//DOM
+
+const output = document.querySelector(".salida");
+
+const encriptarBtn = document.querySelector(".botonEncriptar"); //encriptar
+
+const desencriptarBtn = document.querySelector(".boton-desencriptar"); //desencriptar 
+
+const copiarBtn = document.querySelector(".boton-copiar"); //copiar 
+
+
+/*  Debe funcionar solo con letras minúsculas
+    No deben ser utilizados letras con acentos ni caracteres especiales
+
+    Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
+    Por ejemplo:
+    "gato" => "gaitober"
+    gaitober" => "gato"
+
+    La página debe tener campos para
+    inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
+    El resultado debe ser mostrado en la pantalla.
+*/
+
+const letrasPorEncriptar =["e","i","a","o","u"];
+const letrasYaEncriptadas =["enter","imes","ai","ober","ufat"]
+
+const textarea = document.querySelector('textarea');
+
+textarea.addEventListener('input', function() {
+  const value = this.value;
+  const lowercaseValue = value.toLowerCase();
+
+  if (value !== lowercaseValue) {
+    this.value = lowercaseValue;
+    console.log('Solo se permiten letras en minúsculas');
+  }
+});
+
+
+//Encriptar texto
+
+encriptarBtn.addEventListener("click",
+() => {
+
+  let input = document.getElementById("input").value; //entrada de texto
+
+    for(let i = 0; i <= letrasPorEncriptar.length; i++){
+        input = input.replaceAll(letrasPorEncriptar[i],letrasYaEncriptadas[i]);
+    }
+    console.log(input);
+  output.innerHTML = input;
+}
+);
+
+//Recibir y desencriptar texto
+
+desencriptarBtn.addEventListener("click",
+() => {
+
+  let input = document.getElementById("input").value;//entrada de texto
+
+    for(let i = 0; i <= letrasYaEncriptadas.length; i++){
+      input = input.replaceAll(letrasYaEncriptadas[i],letrasPorEncriptar[i]); 
+    }
+    console.log(input);
+    output.innerHTML = input;
+  }
+);
+copiarBtn.addEventListener("click", () => {
+  output.select();
+  document.execCommand("copy");
+});
